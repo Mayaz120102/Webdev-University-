@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin :0;
+    box-sizing: border-box;
+}
+body{
+    background :floralwhite;
+}
+header{
+    height: 66px;
+    background-color: cadetblue;
+}
+
+header * {
+    color :aliceblue;
+}
+
+header .logo{
+    float: left;
+    border : 1px solid cadetblue;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logotext{
+    margin: 5px;
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+header .logotext span {
+    color: rgb(8, 101, 104);
+}
+header ul{
+    float: right;
+    /* border: 1px solid orange; */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    ;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li a{
+    display: block;
+    padding: 24px;
+    text-decoration: none;
+    
+}
+
+header ul li a:hover{
+    background:rgb(11, 33, 34);
+    transition: 0.5s;
+}
+
+header ul li ul {
+    position: absolute;
+    top : 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+}
+header ul li:hover ul{
+  display: block;
+}
+
+header ul li ul li{
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    color: black;
+    background: white;
+}
+header ul li ul li a:hover{
+    background: rgb(19, 149, 151);
+}
+
+header ul li ul li .logout{
+    color: red;
+}
+
+
+header .menu-toggle{
+    display: none;
+    
+}
