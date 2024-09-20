@@ -31,6 +31,7 @@ header .logotext{
 header .logotext span {
     color: rgb(8, 101, 104);
 }
+
 header ul{
     float: right;
     /* border: 1px solid orange; */
@@ -89,4 +90,58 @@ header ul li ul li .logout{
 header .menu-toggle{
     display: none;
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media only screen and (max-width: 750px){
+   header{
+    position: relative;
+   }
+   
+    header ul{
+        width: 100%;
+        background: rgb(47, 90, 92);
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    header ul li{
+        width: 100%;
+    }
+    header ul li ul{
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    header ul li ul li a {
+        padding: 10px;
+        color: black;
+        background :cadetblue;
+        padding-left: 50px;
+    }
+    header ul li ul li .logout{
+        color: red;
+    }
+
+    header .menu-toggle{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 2em;
+    }
 }
