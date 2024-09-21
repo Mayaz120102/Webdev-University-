@@ -4,28 +4,21 @@
 }
 
 body{
-  background-color: brown;
+  background-color: rgb(250, 242, 242);
   width: 100%;
   
 }
-
-.one {
-  background-color: blue;
-  width: 50%;
-  /* border-radius: 10px; */
-  /* box-shadow: 0px, 50px; */
-  margin: 20px;
+header{
+  height: 60px;
+  background: blueviolet;
+  border: 1px solid red;
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between;
+
 }
 
-.two{
-    background-color: blueviolet;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
-
+.para {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
 }
