@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100vh;
+        /* border: 1px solid red; */
+        color: blue;
+        gap: 10px;
+      }
+      .box {
+        border: 1px solid lime;
+        background: yellow;
+        /* width: 20vh;
+        height: 50px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .box-exe {
+        padding-top: 20%;
+        padding-bottom: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red;
+        gap: 10px;
+      }
+      .box-exe1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .box-exe2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .box-exe3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .box-exe4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid brown; */
+        gap: 10px;
+      }
+      .box-exe1 .box,
+      .box-exe2 .box,
+      .box-exe3 .box {
+        height: 100px;
+        width: 100px;
+      }
+      #box-11,
+      #box-12 {
+        width: 43vh;
+        height: 20px;
+      }
+      #box-1 {
+        position: absolute;
+        left: 105px;
+        top: 45vh;
+        transform: translateY(-50%);
+        height: 380px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-exe">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box-exe1">
+          <div class="box" id="box-2">box-2</div>
+          <div class="box" id="box-3">box-3</div>
+          <div class="box" id="box-4">box-4</div>
+        </div>
+        <div class="box-exe2">
+          <div class="box" id="box-5">box-5</div>
+          <div class="box" id="box-6">box-6</div>
+          <div class="box" id="box-7">box-7</div>
+        </div>
+        <div class="box-exe3">
+          <div class="box" id="box-8">box-8</div>
+          <div class="box" id="box-9">box-9</div>
+          <div class="box" id="box-10">box-10</div>
+        </div>
+        <div class="box-exe4">
+          <div class="box" id="box-11">box-11</div>
+          <div class="box" id="box-12">box-12</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- used flex for the layout  -->
